@@ -2,6 +2,7 @@ package com.xcy.jmall.bean;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * @author xcy
@@ -9,7 +10,7 @@ import javax.persistence.Id;
  * @date 2019/3/11 23:21
  * @Version v1.0
  */
-public class UserInfo {
+public class UserInfo implements Serializable {
 
     @Id
     private String id;
