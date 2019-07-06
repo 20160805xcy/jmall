@@ -20,7 +20,7 @@ import java.util.List;
 public class UserController {
 
     //@Autowired
-    @Reference
+    @Reference //远程注入,RPC的一个远程调用代理
     private UserInfoService userInfoService;
 
     @RequestMapping("getUserInfoList")
