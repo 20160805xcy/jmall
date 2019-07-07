@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.xcy.jmall</groupId>
+        <artifactId>jmall-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.xcy.jmall</groupId>
+    <artifactId>jmall-manage-service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>jmall-manage-service</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <!--后端调用则依赖jmall-api + jmall-service-util-->
+        <dependency>
+            <groupId>com.xcy.jmall</groupId>
+            <artifactId>jmall-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xcy.jmall</groupId>
+            <artifactId>jmall-service-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--后端调用则依赖jmall-api + jmall-service-util-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
